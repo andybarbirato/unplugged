@@ -137,7 +137,7 @@ figure {
 }
  
 address {
- color: #e1e2ea;
+ font-style: normal;
 }
  
 .content-wrapper {
@@ -166,8 +166,12 @@ header {
   background-color: #202322;
 }
 
-header img {
-  width: 220px;
+header figure {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper {
@@ -253,8 +257,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/header-backgrnd.jpg') center no-repeat #527158;
+  background: url('../img/header-backgrnd.jpg');
   background-size: cover;
+  background-position: center;
   height: 500px;
 }
 
@@ -335,6 +340,7 @@ aside h3 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 
@@ -343,13 +349,34 @@ aside h3 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
   margin: 0;
 }
 
+.mission h1 {
+  color: #e2e3ed;
+  font-size: 2.25em;
+}
 
+.contact-section address {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
+.contact-section h2 {
+  font-size: 2.25em;
+  padding: 0;
+}
+
+.contact-section h3 {
+  font-size: 1.5em;
+}
 
 /* ---------------------Mobile styles - faq page------------------------ */
 
@@ -358,14 +385,24 @@ aside h3 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.faq article {
+  margin-bottom: 20px;
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h1 {
+  color: #e2e3ed;
+  font-size: 2.25em;
 }
 
 .faq h2 {
@@ -511,6 +548,10 @@ input[type=button] {
     padding: 33px 0;
   }
 
+  header figure {
+    width: 20%;
+  }
+
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
@@ -584,7 +625,7 @@ input[type=button] {
     margin: 5px 0 0 10px;
   }
 
-  /*Foorter styles*/
+  /*Footer styles*/
 
   footer .content-wrapper {
     width: 65%;
@@ -605,6 +646,10 @@ input[type=button] {
     width: 100%;
   }
 
+  footer h4 {
+    font-size: 1.5em;
+  }
+
   /* ==========================================================================
      About Page
      ========================================================================== */
@@ -612,7 +657,8 @@ input[type=button] {
     .mission-content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
       padding-top: 20px
     }
   
@@ -636,12 +682,17 @@ input[type=button] {
   
     .faq .content-wrapper {
       justify-content: space-between;
+      align-items: flex-start;
     }
   
-    .faq-content {
+    .faq-item {
       flex-basis: 45%;
     }
   
+    .faq h1 {
+      width: 100%;
+    }
+
     .faq h2 {
       width: 100%;
     }
