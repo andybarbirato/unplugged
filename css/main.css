@@ -247,7 +247,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 1em;
 
 }
 
@@ -275,7 +275,8 @@ footer .copyright {
 
 .hero-area h1 {
   color: #e2e3ed;
-  font-size: 2.25em;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 /* Aside */
@@ -358,6 +359,10 @@ aside h3 {
   background-color: #527158;
 }
 
+.mission p{
+  font-size: 1.125em;
+  line-height: 1.25em;
+}
 
 .contact-section {
   display: flex;
@@ -367,13 +372,16 @@ aside h3 {
   background-color: #2a423a;
 }
 
-.contact-content p {
+.contact-section p {
   margin: 0;
+  font-size: 1.125em;
+  line-height: 1.5em;
 }
 
 .mission h1 {
   color: #e2e3ed;
-  font-size: 2.25em;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 .contact-section address {
@@ -385,12 +393,12 @@ aside h3 {
 }
 
 .contact-section h2 {
-  font-size: 2.25em;
+  font-size: 3em;
   padding: 0;
 }
 
 .contact-section h3 {
-  font-size: 1.5em;
+  font-size: 1.875em;
 }
 
 .map figure {
@@ -432,11 +440,13 @@ aside h3 {
 
 .faq h1 {
   color: #e2e3ed;
-  font-size: 2.25em;
+  font-size: 3em;
+  font-weight: normal;
 }
 
-.faq h2 {
-  margin-bottom: 40px;
+.faq h4 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
 }
 
 .faq-content {
