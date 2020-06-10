@@ -119,6 +119,7 @@ h4 {
  font-family: 'Poppins', sans-serif;
  color: #e2e3ed;
  font-weight: normal;
+ font-style: normal;
 }
  
 p {
@@ -128,11 +129,11 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -216,6 +217,7 @@ footer {
 
 footer p {
   margin: 0;
+  font-style: normal;
 }
 
 footer .content-wrapper {
@@ -251,7 +253,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #527158 url("../img/header-backgrnd.jpg") no-repeat center top;
+  background: url('../img/header-backgrnd.jpg') center no-repeat #527158;
   background-size: cover;
   height: 500px;
 }
@@ -303,6 +305,7 @@ aside h3 {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -560,12 +563,26 @@ input[type=button] {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    align-content: center;
+  }
+
+  .reviews article figure {
+    width: 50%;
   }
 
   .reviews article div {
-    width: 49%;
+    width: 50%;
   }
 
+  .reviews article div h3 {
+    width: 100%;
+    margin: 0 0 0 10px;
+  }
+
+  .reviews article div p {
+    width: 100%;
+    margin: 5px 0 0 10px;
+  }
 
   /*Foorter styles*/
 
