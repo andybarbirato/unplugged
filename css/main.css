@@ -609,6 +609,12 @@ input[type=button] {
   .header-divider {
     display: none;
   }
+  /*Hero styles*/
+
+  .hero-area .content-wrapper {
+    margin-top: 50px;
+  }
+
 
   /*Aside styles*/
 
